@@ -1,0 +1,10 @@
+let hrs=document.getElementById('hrs');
+let min=document.getElementById('min')
+let sec=document.getElementById('sec')
+let d=new Date();
+let hours=d.getHours();
+let minutes=d.getMinutes();
+let seconds=d.getSeconds();
+hrs.textContent=hours;
+min.textContent=minutes;
+sec.textContent=seconds;

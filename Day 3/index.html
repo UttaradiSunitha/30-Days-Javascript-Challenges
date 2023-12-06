@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    button{
+    position:absolute;
+    top:50%;
+    left:50%;
+    border-radius: 5px;
+    padding:10px;
+    box-shadow: 2px 2px 1px 1px lightskyblue;
+    }
+    body{
+        background: darkseagreen;
+    }
+
+    </style>
+</head>
+<body >
+    <!-- Challenge 3: Write a program that plays a simple sound when a button is clicked. -->
+    <button id="btn">Click</button>
+    <script>
+        let btn=document.getElementById('btn');
+        function playAudio(){
+            let audio=document.createElement('audio');
+            audio.setAttribute('src','Music.mp3');
+            audio.setAttribute('autoplay','autoplay');
+        }
+    btn.addEventListener('click',playAudio)
+
+    </script>
+</body>
+</html>

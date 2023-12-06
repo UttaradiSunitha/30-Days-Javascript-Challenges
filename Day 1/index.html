@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    button{
+    position:absolute;
+    top:50%;
+    left:50%;
+    border-radius: 5px;
+    padding:10px;
+    }
+    </style>
+</head>
+<body id="body">
+    <!-- Challange 1: Create a basic webpage that changes its background color when a button is clicked. Use JavaScript to manipulate the DOM. -->
+    <button id="btn">Click Me</button>
+    <script>
+        let btn=document.getElementById('btn');
+        let body=document.getElementById('body');
+        function backgroundChanger(){
+            body.style.backgroundColor='green'
+        }
+        btn.addEventListener('click',backgroundChanger);
+    </script>
+</body>
+</html>
